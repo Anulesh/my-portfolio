@@ -1,20 +1,21 @@
 import { h } from "preact";
-import CanvasScene from "./components/CanvasScene";
 import About from "./pages/About";
 import Work from "./pages/Work";
 import Experience from "./pages/Experience";
 import Contact from "./pages/Contact";
-import { Navbar } from "./components/NavBar";
+import { Header } from "./components/Header";
+import AnimatedCanvas from "./components/AnimatedCanvas";
+import { Navbar } from "./components/Navbar";
 
 export const App = () => (
-  <div>
-    <Navbar />
-    <CanvasScene />
+  <>
+    <AnimatedCanvas />
+    <Header />
     <About />
     <Work />
     <Experience />
     <Contact />
-  </div>
+  </>
 );
 
 export default App;
